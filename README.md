@@ -3,50 +3,50 @@ This project models a package transportation problem using PDDL/STRIPS and the L
 
 Features:
 
-  Multiple Locations: Includes warehouses, ports, and train stations in different cities and countries.
-  
-  Transportation Methods: Utilizes trucks, ships, and trains for transportation.
-  
-  Heuristic Search: Applies heuristic methods like Manhattan and Euclidean distances for pathfinding.
+    Multiple Locations: Includes warehouses, ports, and train stations in different cities and countries.
+    
+    Transportation Methods: Utilizes trucks, ships, and trains for transportation.
+    
+    Heuristic Search: Applies heuristic methods like Manhattan and Euclidean distances for pathfinding.
 
 Implementation Details:
 
-  Domain File: Implemented in domain.pddl.
-  
-  Problem Files:
-  
-    First Problem: Implemented in pb1.pddl with initial and goal states provided.
+    Domain File: Implemented in domain.pddl.
     
-    Second Problem: Implemented in pb2.pddl with complex initial and goal states.
-  
-  Execution: Solutions were tested using the online planner at editor.planning.domains.
+    Problem Files:
+    
+      First Problem: Implemented in pb1.pddl with initial and goal states provided.
+      
+      Second Problem: Implemented in pb2.pddl with complex initial and goal states.
+    
+    Execution: Solutions were tested using the online planner at editor.planning.domains.
 
 Key Concepts:
 
-  (at ?x ?y): Indicates that ?x is at location ?y.
-  
-  (in ?x ?y): Indicates that location ?x is within location ?y.
-  
-  (on ?x ?y): Indicates that package ?x is on transportation means ?y.
-  
-  (loaded ?x): Indicates that transportation means ?x is loaded.
-  
-  (unloaded ?x): Indicates that transportation means ?x is unloaded.
-  
-  (connected ?x ?y): Indicates that wagon ?x is connected to locomotive ?y.
-  
-  (free ?x): Indicates that wagon ?x is free.
-  
-  (is_something ?x): Indicates that ?x is something (e.g., (is_country Greece) indicates that Greece is a country).
+    (at ?x ?y): Indicates that ?x is at location ?y.
+    
+    (in ?x ?y): Indicates that location ?x is within location ?y.
+    
+    (on ?x ?y): Indicates that package ?x is on transportation means ?y.
+    
+    (loaded ?x): Indicates that transportation means ?x is loaded.
+    
+    (unloaded ?x): Indicates that transportation means ?x is unloaded.
+    
+    (connected ?x ?y): Indicates that wagon ?x is connected to locomotive ?y.
+    
+    (free ?x): Indicates that wagon ?x is free.
+    
+    (is_something ?x): Indicates that ?x is something (e.g., (is_country Greece) indicates that Greece is a country).
 
 Actions:
 
-  Move: Move truck, ship, wagon, locomotive.
+    Move: Move truck, ship, wagon, locomotive.
+    
+    Load/Unload: Load and unload truck, ship, wagon.
+    
+    Connect/Disconnect: Connect and disconnect wagon with locomotive.
   
-  Load/Unload: Load and unload truck, ship, wagon.
-  
-  Connect/Disconnect: Connect and disconnect wagon with locomotive.
-
 
 Execution with LAMA Planner:
 
